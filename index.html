@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+    <div class="side-nav-menu d-flex align-items-center position-fixed top-0 start-0 vh-100 ">
+        <div class="nav">
+            <div class="nav-tab vh-100 text-black d-flex flex-column justify-content-between p-4">
+                <div class="links">
+                    <ul class="list-unstyled overflow-hidden">
+                        <li class="py-2 position-relative cursor-pointer search">Search</li>
+                        <li class="py-2 position-relative cursor-pointer categories">Categories</li>
+                        <li class="py-2 position-relative cursor-pointer area">Area</li>
+                        <li class="py-2 position-relative cursor-pointer ingredients">Ingredients</li>
+                        <li class="py-2 position-relative cursor-pointer contact">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="nav-footer">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="footer">
+                        <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between bg-white text-black text-center p-2 vh-100">
+            <img class="logo" src="logo.png" alt="Yummy">
+            <i class="fa fa-bars open fs-3"></i>
+            <div>
+                <i class=" fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container w-75" id="searchContainer">
+
+    </div>
+    <div class="min-vh-100 position-relative" id="data">
+        <div id="wifi-loader" class="inner-loading-screen" style="display: none;">
+            <svg class="circle-outer" viewBox="0 0 86 86">
+                <circle class="back" cx="43" cy="43" r="40"></circle>
+                <circle class="front" cx="43" cy="43" r="40"></circle>
+                <circle class="new" cx="43" cy="43" r="40"></circle>
+            </svg>
+            <svg class="circle-middle" viewBox="0 0 60 60">
+                <circle class="back" cx="30" cy="30" r="27"></circle>
+                <circle class="front" cx="30" cy="30" r="27"></circle>
+            </svg>
+            <svg class="circle-inner" viewBox="0 0 34 34">
+                <circle class="back" cx="17" cy="17" r="14"></circle>
+                <circle class="front" cx="17" cy="17" r="14"></circle>
+            </svg>
+            <div class="text" data-text="Searching"></div>
+        </div>
+        <div class="container">
+            <div class="row py-5 g-4 " id="rowData">
+
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
